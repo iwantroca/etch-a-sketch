@@ -8,25 +8,16 @@
     <title>Etch A Sketch</title>
   </head>
   <body>
-    <header>
-      <h1>Etch A Sketch</h1>
-    </header>
+    <!-- <header><h1>Etch A Sketch</h1></header> -->
     <main>
-      <div id="grid-container"></div>
-    </main>
-    <footer>
-      Crafted by <a href="#">Mohit Notiyal</a> | <a href="#">Source</a>
-    </footer>
-  </body>
-  <script>
-    let divList = [];
-    let gridContainer = document.querySelector("#grid-container");
-    for (let i = 0; i < 34; i++) {
-      let div = document.createElement("div");
-      div.textContent = "1";
-      divList.push(div);
-    }
+      <div id="outer-box">
+        <header><h1>Etch A Sketch</h1></header>
 
-    divList.forEach((x) => gridContainer.appendChild(x));
-  </script>
+        <div id="canvas"></div>
+      </div>
+      <footer>
+        Crafted by <a href="#">Mohit Notiyal</a>| <a href="#">Source</a>
+      </footer>
+    </main>
+  </body>
 </html>

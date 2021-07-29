@@ -4,25 +4,40 @@
   box-sizing: border-box;
 }
 html {
-  background: #7b75be;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-size: 16px;
-  position: relative;
+  font-size: 17px;
 }
-
 body {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #dedede;
+}
+#outer-box {
+  border: 1px solid #000;
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(167, 37, 37);
+  flex-direction: column;
+  border-radius: 20px;
+}
+#canvas {
+  margin: 2rem;
+  border: 3px solid black;
+  width: 44vw;
+  height: 50vh;
   place-items: center;
-  background: #df6d6d;
-  width: 70vw;
-  height: 80vh;
-  border-radius: 2.5rem;
+  background: white;
+}
+h1 {
+  color: gold;
 }
 footer {
-  position: fixed;
-  bottom: 50px;
+  text-align: center;
+  border: 1px solid #000;
 }
