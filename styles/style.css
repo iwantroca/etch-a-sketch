@@ -16,13 +16,13 @@ body {
   background: #dedede;
 }
 #outer-box {
-  border: 1px solid #000;
   width: 50vw;
   height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(167, 37, 37);
+  /* background: rgb(167, 37, 37); */
+  background: #c73838;
   flex-direction: column;
   border-radius: 20px;
 }
@@ -35,9 +35,25 @@ body {
   background: white;
 }
 h1 {
+  font-size: 2.3rem;
   color: gold;
+}
+.knob {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background: gray;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+#control-box {
+  width: 35rem;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
 }
 footer {
   text-align: center;
-  border: 1px solid #000;
 }
