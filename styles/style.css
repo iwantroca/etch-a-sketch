@@ -31,24 +31,25 @@ body {
   background-color: white;
   /* grid */
   display: grid;
-  grid-template-columns: repeat(50, 1fr);
-  grid-template-rows: repeat(50, 1fr);
+  /* place-items: center; */
+  justify-content: center;
 }
-
+/* .grid-items {
+  padding: 0.16rem;
+  border: 1px solid #000;
+} */
 h1 {
   font-size: 3rem;
   font-weight: lighter;
   color: gold;
   margin-top: 1rem;
 }
-
 #control-box {
   width: 35rem;
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-
 .knob {
   width: 6rem;
   height: 6rem;
@@ -59,7 +60,6 @@ h1 {
   justify-content: center;
   place-items: center;
 }
-
 footer {
   text-align: center;
   font-family: poppins;
