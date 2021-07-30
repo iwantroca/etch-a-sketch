@@ -30,7 +30,7 @@ colorSetter.addEventListener("mouseleave", (e) => colorChanger());
 gridItems.forEach((item) =>
   item.addEventListener(
     "mouseenter",
-    (e) => (e.target.style.background = `${newColor}`)
+    (e) => (e.target.style.background = newColor ?? "black")
   )
 );
 function resetCanvas() {
