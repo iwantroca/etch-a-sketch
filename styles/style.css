@@ -29,7 +29,12 @@ body {
   width: 54vw;
   height: 65vh;
   background-color: white;
+  /* grid */
+  display: grid;
+  grid-template-columns: repeat(50, 1fr);
+  grid-template-rows: repeat(50, 1fr);
 }
+
 h1 {
   font-size: 3rem;
   font-weight: lighter;
