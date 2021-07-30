@@ -31,7 +31,6 @@ body {
   background-color: white;
   /* grid */
   display: grid;
-  /* place-items: center; */
   justify-content: center;
 }
 /* .grid-items {
