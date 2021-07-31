@@ -1,9 +1,11 @@
-const canvas = document.querySelector("#canvas");
-const resetBtn = document.querySelector("#reset-btn");
-const colorSetter = document.querySelector("#color-setter");
 let divList = [];
 let newColor;
 let gridNum;
+let div;
+
+const canvas = document.querySelector("#canvas");
+const resetBtn = document.querySelector("#reset-btn");
+const colorSetter = document.querySelector("#color-setter");
 
 function gridSetup() {
   gridNum = parseInt(prompt("Enter the grid rows"));
@@ -11,10 +13,9 @@ function gridSetup() {
   canvas.style.gridTemplateColumns = `repeat(${gridNum}, 1fr)`;
   return gridNum;
 }
-gridSetup();
 function createGrid() {
   for (let i = 0; i < gridNum * gridNum; i++) {
-    let div = document.createElement("div");
+    div = document.createElement("div");
     div.classList.add("grid-items");
     divList.push(div);
   }
@@ -23,6 +24,11 @@ function colorChanger() {
   newColor = colorSetter.value;
   return newColor;
 }
+function resetCanvas() {
+  divList.forEach((div) => (div.style.backgroundColor = "white"));
+}
+
+gridSetup();
 createGrid();
 
 divList.forEach((div) => canvas.appendChild(div));
@@ -37,9 +43,7 @@ gridItems.forEach((item) =>
     (e) => (e.target.style.background = newColor ?? "black")
   )
 );
-function resetCanvas() {
-  divList.forEach((div) => (div.style.backgroundColor = "white"));
-}
+
 resetBtn.addEventListener("click", () => {
   resetCanvas();
   gridSetup();
