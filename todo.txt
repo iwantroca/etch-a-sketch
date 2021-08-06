@@ -1,0 +1,1 @@
+// if you want to keep the size of pixels constant; then fix the size of container so the size of pixels won't spread 
