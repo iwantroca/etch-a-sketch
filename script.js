@@ -35,7 +35,8 @@ divList.forEach((div) => canvas.appendChild(div));
 
 const gridItems = document.querySelectorAll(".grid-items");
 
-colorSetter.addEventListener("mouseleave", (e) => colorChanger());
+// colorSetter.addEventListener("mouseleave", (e) => colorChanger());
+colorSetter.addEventListener("mouseleave", colorChanger);
 
 gridItems.forEach((item) =>
   item.addEventListener(
